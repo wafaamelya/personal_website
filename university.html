@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+table, th, td {
+  border: 10px solid #f0f8ff;
+  border-style: inset;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #d5d5e9;
+  padding: 14px;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(227, 227, 240, 0.5); 
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.btn {
+  background-color: #d5d5e9;
+  border: none;
+  color: black;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.btn:hover {
+  background-color: #eadfd4;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<center><h1 style="font-family:Bookman Old Style; background-color: #eadfd4; color:BLACK">MY UNIVERSITY'S FRIENDS</h1>
+
+<center><p style="font-family:Book Antiqua; font-size:120%">my university friends are my current roommates and my ex-roomates</p>
+
+<table style="width:100%">
+  <tr>
+    <th colspan="3">
+      <div class="container">
+        <img src="image/mate 1.png" alt="Image of Mate 1">
+        <div class="overlay"></div>
+      </div>
+    </th>
+    <th colspan="3">
+      <div class="container">
+        <img src="image/mate 2.png" alt="Image of Mate 2">
+        <div class="overlay"></div>
+      </div>
+    </th>
+    <th colspan="3">
+      <div class="container">
+        <img src="image/mate 3.png" alt="Image of Mate 3">
+        <div class="overlay"></div>
+      </div>
+    </th>
+  </tr>
+  <tr>
+    <th colspan="3">
+      <div class="container">
+        <img src="image/unis 1.png" alt="unis 1">
+        <div class="overlay"></div>
+      </div>
+    </th>
+    <th colspan="3">
+      <div class="container">
+        <img src="image/unis 3.png" alt="unis 2">
+        <div class="overlay"></div>
+      </div>
+    </th>
+    <th colspan="3">
+      <div class="container">
+        <img src="image/unis 2.png" alt="unis 3">
+        <div class="overlay"></div>
+      </div>
+    </th>
+  </tr>
+</table>
+
+<div class="button-container">
+    <a href="highschool.html" class="btn previous round">&#8249;</a>
+    <a href="menu3.html" class="btn"><i class="fa fa-home"></i></a>
+    <a href="education.html" class="btn next round">&#8250;</a>
+</div>
+
+</body>
+</html>

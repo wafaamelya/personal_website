@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .message {
+            font-size: 1.5em;
+            color: #62543f;
+            margin-bottom: 100px; 
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .character {
+            position: relative;
+            width: 100px;
+            height: 200px;
+            background-color: #ffcccb;
+            border-radius: 50px;
+        }
+
+        .head {
+            position: absolute;
+            top: -50px;
+            left: 25px;
+            width: 50px;
+            height: 50px;
+            background-color: #ffe4e1;
+            border-radius: 50%;
+        }
+
+        .arm {
+            position: absolute;
+            top: 50px;
+            left: -20px;
+            width: 20px;
+            height: 80px;
+            background-color: #ffcccb;
+            border-radius: 10px;
+            transform-origin: top;
+            animation: wave 1s infinite;
+        }
+
+        .hand {
+            position: absolute;
+            bottom: 0;
+            left: -5px;
+            width: 30px;
+            height: 30px;
+            background-color: #ffe4e1;
+            border-radius: 50%;
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(200deg); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+    <style>
+    h1 {
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    </style>
+</head>
+<body>
+    <h1><div class="message">✧･ﾟ: *✧･ﾟ:*  Hello, welcome to my personal website  ✧･ﾟ: *✧･ﾟ:*</div></h1>
+    <div class="character">
+        <div class="head"></div>
+        <div class="arm">
+            <div class="hand"></div>
+        </div>
+    </div>
+</body>
+</html>

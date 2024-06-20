@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+}
+
+.column {
+  width: 20%;
+  padding: 5px;
+  text-align: center; 
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(208, 171, 137, 0.5); 
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.container img {
+  border: 4px solid #443220;
+}
+
+ol {
+  padding-left: 0; 
+  list-style-position: inside; 
+}
+
+ol li {
+  margin: 5px 0; 
+}
+
+.btn {
+  background-color: #bdaba7;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.btn:hover {
+  background-color: #91736e;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<center><h1 style="font-family:Bodoni MT Black; background-color:#91736e; color:white">MY SIBLINGS</h1>
+<br>
+<p style="font-size:110%;">Move your cursor to see overlay effect on the picture!</p>
+
+<div class="row">
+  <div class="column">
+    <div class="container">
+      <img src="image/photo_6282999471843425550_y.jpg" alt="my siblings 1">
+      <div class="overlay"></div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="container">
+      <img src="image/photo_6282999471843425553_y.jpg" alt="my siblings 2">
+      <div class="overlay"></div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="container">
+      <img src="image/photo_6282999471843425551_y.jpg" alt="my siblings 3">
+      <div class="overlay"></div>
+    </div>
+  </div>
+</div>
+
+<center><p style="font-family:Cascadia Mono; font-size:120%;">This is my siblings!</p>
+
+<ol>
+  <li>My brother: Mohammad Wafiy Aiman </li>
+  <li>My eldest sister: Nur Wafa Auniy</li>
+  <li>My sister: Nur Wafa Afryna</li>
+  <li>Me: Nur Wafa Amelya</li>
+  <li>My younger sister: Nur Wafa Awatyf</li>
+  <li>My youngest sister: Nur Wafa Az-zahra</li>
+</ol> 
+
+<div class="button-container">
+    <a href="parents.html" class="btn previous round">&#8249;</a>
+    <a href="menu3.html" class="btn"><i class="fa fa-home"></i></a>
+    <a href="highschool.html" class="btn next round">&#8250;</a>
+</div>
+
+</body>
+</html>

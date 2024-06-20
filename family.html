@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif; margin: 0; padding: 0; height: 100%; position: relative;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+video {
+  border: 5px solid #555;
+}
+
+.btn {
+  background-color: #bdaba7;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.btn:hover {
+  background-color: #a8978d;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<center><h1 style="font-family:Broadway; background-color:#bdaba7; color:#323432;">MY FAMILY</h1>
+<br>
+<center><p style="font-family:Cascadia Mono; font-size:120%;">this is my family eid's picture of 2024!</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <center><img src="image/photo_6282999471843425555_y.jpg" style="width:70%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <center><img src="image/photo_6282999471843425557_y.jpg" style="width:70%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <center><img src="image/photo_6282999471843425556_y.jpg" style="width:70%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2500); // Change image every 2 seconds
+}
+</script>
+
+<br>
+
+<center><p style="font-family:Cascadia Mono; font-size:120%;">scroll down to see a video of my family on eid day!</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<center><h1 style="font-family:Broadway; background-color:#bdaba7; color:#323432;">VIDEO</h1>
+<center><p style="font-family:Cascadia Mono; font-size:120%;">A video of my family's eid handshake session</p>
+
+<div class="video-container">
+  <video width="500" height="250" controls>
+    <source src="video/eid_video.mp4" type="video/mp4">
+    <source src="video/eid_video.ogg" type="video/ogg">
+  </video>
+  <div class="button-container">
+    <a href="about_me.html" class="btn previous round">&#8249;</a>
+    <a href="menu3.html" class="btn"><i class="fa fa-home"></i></a>
+    <a href="parents.html" class="btn next round">&#8250;</a>
+  </div>
+</div>
+
+<br>
+<br>
+
+</body>
+</html>
